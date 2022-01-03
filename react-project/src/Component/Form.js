@@ -4,21 +4,21 @@ export class Form extends Component {
     render() {
         return (
             <div>
-                <div class='container m-5'>
-                    <form class="row g-3">
+                <div class='container py-5 g-5 m-5 border rounded-3 bg-light'>
+                    <form class="row needs-validation" novalidate>
                         <div class="col-md-6">
                             <label for="inputFirstName" class="form-label">First name</label>
-                            <input type="firstName" class="form-control" id="inputFirstName" placeholder='First name'/>
+                            <input type="firstName" class="form-control" id="inputFirstName" placeholder='First name' required/>
                         </div>
 
                         <div class="col-md-6">
                             <label for="inputLastName" class="form-label">Last name</label>
-                            <input type="email" class="form-control" id="inputLastName" placeholder='Last name'/>
+                            <input type="lastName" class="form-control" id="inputLastName" placeholder='Last name' required/>
                         </div>
 
                         <div class="col-md-6">
                             <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder='johndoe@gmail.com'/>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder='johndoe@gmail.com' required/>
                         </div>
 
                         <div class="col-md-6">
@@ -64,7 +64,7 @@ export class Form extends Component {
                         </div>
 
                         <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Sign in</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
 
                     </form>
